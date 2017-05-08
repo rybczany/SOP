@@ -1,0 +1,88 @@
+/*--------------LAYOUT*/
+body {
+	margin: 0;
+	background-color: #ffffff;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+.container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*----------HEADER*/
+
+header {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #eff0f2;
+}
+header h1 {
+	margin: 0;
+	padding: 15px 0;
+	text-align: center;
+	position: relative;
+	text-shadow: 5px 8px 8px #c0c3c9;
+}
+header h1:nth-child(1) {
+	padding-top: 205px;
+}
+h1 span {
+	background-color: #b2f2ee;
+	padding: 0 10px;
+}
+.btn-align {
+	padding: 150px;
+}
+.logo {
+	border: 5px solid black;
+	width: 110px;
+	height: 40px;
+	margin-top: 70px;
+}
+.logo h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	margin: 7px 10px 10px;
+}
+
+/*-----------TYPOGRAPHY*/
+h1, h2, h3, h4, h5 {
+	line-height: 28px;
+}
+h1, h2, a {
+	font-family: 'Montserrat', sans-serif;
+}
+h3, h4 {
+	font-family: 'Merriweather', serif;
+}
+h1 {
+	font-size: 45px;
+	letter-spacing: 3px;
+}
+h2 {
+	font-size: 38px
+}
+h3 {
+	font-size: 20px
+}
+h4 {
+	font-size: 17px
+}
+
+/*-----------------BUTTONS*/
+.btn {
+	border-radius: 2px;
+	border: 2px solid #777879;
+	cursor: auto;
+	font-size: 18px;
+	letter-spacing: 0.3px;
+	word-spacing: 1px;
+	line-height: 50px;
+	text-decoration: none;
+	color: #777879;
+	width:225px;
+	display: inline-block;
+}

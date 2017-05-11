@@ -5,61 +5,90 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 }
+header {
+	background-color: #eff0f2;
+}
+.almost-white {
+	background-color: #f8fafa
+}
 .container {
-	max-width: 1140px;
+	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
 }
 /*------------GLOBAL*/
 .row {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
+  	display: -ms-flexbox;
+  	display: -webkit-box;
+  	display: flex;
+  	justify-content: center;
+  	flex-wrap: wrap;
 }
-.col-lg-2 {
-    -ms-flex-preferred-size: 16.667%;
-    flex-basis: 16.667%;
-    max-width: 16.667%;
-  }
-  .col-lg-6 {
-    -ms-flex-preferred-size: 50%;
+.col-lg-4 {
+    -ms-flex-preferred-size: 33.333%;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+}
+.col-lg-5 {
+    -ms-flex-preferred-size: 41.667%;
+    flex-basis: 41.667%;
+    max-width: 41.667%;
+ }
+.col-lg-6 {
+   -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-width: 50%;
-  }
+ }
+.col-lg-7 {
+    -ms-flex-preferred-size: 58.333%;
+    flex-basis: 58.333%;
+    max-width: 58.333%;
+ }
+.col-lg-12 {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+ }
 
 
 /*-----------TYPOGRAPHY*/
 
-h1, h2, a {
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 2px;
-}
-h3, h4 {
-	font-family: 'Merriweather', serif;
-}
 h1 {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 45px;
+	letter-spacing: 2px;
+	line-height: 65px;
 }
 h2 {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 38px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	margin: 0;
+	padding-top: 120px;
 }
 h3 {
-	font-size: 20px
+	font-family: 'Merriweather', serif;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 1px;
 }
 h4 {
+	font-family: 'Merriweather', serif;
 	font-size: 17px;
 	font-weight: 400;
 	color: #848585;
-	letter-spacing: 2px;
-}
-h1 {
-	line-height: 65px;
-}
-h2, h3, h4, p {
 	line-height: 28px;
+	letter-spacing: 2px;
+	margin: 15px 0 0;
+	padding-bottom: 150px;
 }
 p {
+	line-height: 28px;
 	color: #848585;
+}
+a {
+	font-family: 'Montserrat', sans-serif;
 }
 hgroup {
 	text-align: center;
@@ -84,80 +113,116 @@ hgroup {
 
 header {
 	text-align: center;
-	background-color: #eff0f2;
+	background-size: auto auto;
+	background-image: url("F:/!piotr/zadanie 3/SOP/images/JuiceGlass.png");
+	background-repeat: no-repeat;
+	background-position: 80% 88%;
 }
 header h1 {
 	margin: 0;
-	padding: 15px 0;
+	padding-bottom: 150px;
 	text-align: center;
-	position: relative;
 	text-shadow: 5px 8px 8px #c0c3c9;
-}
-header h1:nth-child(1) {
-	padding-top: 205px;
 }
 h1 span {
 	background-color: #b2f2ee;
 	padding: 0 8px;
 }
-.btn-align {
-	padding-top: 150px;
-	justify-content: center;
-}
 .logo {
 	border: 5px solid black;
 	width: 110px;
 	height: 40px;
-	margin-top: 70px;
+	margin: 70px 0 0 15px;
 }
-.logo h3 {
+.logo p {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
-	margin: 7px 10px 10px;
-}
-header div:last-child {
-	justify-content: flex-end;
-}
-header img {
-	margin: -25px 0 60px;
-}
-/*----------ABOUT (WORKS)*/
-.about {
-	background-color: #f8fafa
-}
-.about h2, .works h2 {
+	font-size: 20px;
+	line-height: 40px;
+	color: #000000;
 	margin: 0;
-	padding-top: 120px;
 }
-.about h4, .works h4 {
-	margin: 15px 0 0;
-	padding-bottom: 150px;
+header .row {
+	justify-content: flex-start;
 }
-.photo-align {
+header a {
+	text-decoration: none;
+	margin-bottom: 200px;
+}
+
+/*----------ABOUT*/
+.slider {
 	width: 390px;
 	height: 485px;
 	overflow: hidden;
 	margin: 0 auto;
 	padding-bottom: 165px;
-	position: relative;
 }
-.photo-align img {
-	width: 100%;
+.slider img {
+	width: auto;
 	height: 100%;
+	display: inline;
+	position: relative;
+  	left: 50%;
+  	transform: translateX(-50%);
 }
-.about h3 {
+section div h3:nth-child(1) {
 	margin: 0 0 20px;
-	letter-spacing: 1px;
 }
-.about p {
-	padding-right: 130px;
+section div p:only-child {
+	padding-right: 60px;
 	letter-spacing: 1px;
 	margin: 20px 0;
 }
-.about h4:nth-child(4) {
-	color: #000000;
-	font-weight: 700;
-	letter-spacing: 1px;
-	padding: 15px 0 0;
+section div h3:nth-child(4) {
+	margin: 50px 0 0 0;
 }
+
+
 /*----------WORKS*/
+.content-photo {
+	width: 375px;
+	height: 360px;
+	overflow: hidden;
+	margin: 7.5px;
+}
+.content-photo img {
+	width: auto;
+	height: 100%;
+	display: inline;
+	position: relative;
+  	left: 50%;
+  	transform: translateX(-50%);
+}
+.photo-box{
+	padding-bottom: 125px;
+}
+.photo-align img {
+	width: 100%;
+	height: auto;
+}
+
+/*----------MOST SERVICE*/
+.large-box {
+	width: 650px;
+	height: 420px;
+	background-image: url("F:/!piotr/zadanie 3/SOP/images/4.png");
+	background-size: cover;
+	margin: 7.5px;
+}
+.large-box h3 {
+	padding: 60px 0 0 60px;
+}
+.large-box p, .small-box p {
+	padding: 0 80px 0 60px;
+}
+.small-box {
+	width: 475px;
+	height: 420px;
+	background-image: url("F:/!piotr/zadanie 3/SOP/images/img-9.png");
+	background-size: cover;
+	margin: 7.5px;
+}
+.small-box h3 {
+	padding: 180px 0 0 60px;
+}

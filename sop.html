@@ -4,8 +4,14 @@
 		<meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>Shopno One Page</title>
-		<link rel="stylesheet" href="css/flexboxgrid.css">
+			<title>Shopno One Page</title>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+ 			<script type="text/javascript" src="js/sop.js"></script>
+    		<script
+        	src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCJnj2nWoM86eU8Bq2G4lSNz3udIkZT4YY&sensor=false">
+    		</script>
+			<link rel="stylesheet" href="css/normalize.css">
+			<link rel="stylesheet" href="css/flexboxgrid.css">
         <link rel="stylesheet" href="css/sop.css">
         <link rel="author" href="humans.txt">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -50,24 +56,36 @@
 					<h2>FEATURED WORKS</h2>
 					<h4>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h4>
 				</hgroup>
-				<div class="row set">
+				<div class="row flex-set">
 					<div class="col-lg-4">
-						<img src="images/banner3.png" alt="">
+						<div class="box">
+							<img src="images/banner3.png" alt="">
+						</div>
 					</div>
 					<div class="col-lg-4">
-						<img src="images/5.png" alt="">
+						<div class="box">
+							<img src="images/5.png" alt="">
+						</div>
 					</div>
 					<div class="col-lg-4">
-						<img src="images/6.png" alt="">
+						<div class="box">
+							<img src="images/6.png" alt="">
+						</div>
 					</div>
 					<div class="col-lg-4">
-						<img src="images/work4.png" alt="">
+						<div class="box">
+							<img src="images/work4.png" alt="">
+						</div>
 					</div>
 					<div class="col-lg-4">
-						<img src="images/9.png" alt="">
+						<div class="box">
+							<img src="images/9.png" alt="">
+						</div>
 					</div>
 					<div class="col-lg-4">
-						<img src="images/4.png" alt="">
+						<div class="box">
+							<img src="images/4.png" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -78,55 +96,131 @@
 					<h2>OUR SERVICE</h2>
 					<h4>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h4>
 				</hgroup>
-				<div class="row set">
+				<div class="row flex-set">
 						<div class="col-lg-7">
-							<div class="large-box">
+							<div class="box">
+								<img src="images/11.png" alt="">
+								<div class="box-content">
 								<h3>DESIGNING IS THE COOL LOVE FOR</h3>
-								<p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+								<p class="box__content__less">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most.</p>
+								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+								<button class="link box__content__less">know more  <i class="icon icon--arrow"></i></button>
+         					<button class="link box__content__more"><i class="icon icon--close"></i></button>
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-5">
-							<div class="small-box">
+							<div class="box">
+								<img src="images/img-9.png" alt="">
+								<div class="box-content">
 								<h3>COOL PSD DESIGN</h3>
-								<p>Our most popular service is our we know that sometimes it’s something and you middle most.</p>
-								<a href="#">KNOW MORE</a>
+								<p class="box__content__less">Our most popular service is our we know that sometimes it’s something and you middle most.</p>
+								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something. You middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+								<button class="link box__content__less">know more  <i class="icon icon--arrow"></i></button>
+         					<button class="link box__content__more"><i class="icon icon--close"></i></button>
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-7">
-							<div class="large-box">
+							<div class="box">
+								<img src="images/griego3_1x.png" alt="">
+								<div class="box-content">
 								<h3>DESIGNING IS THE COOL</h3>
-								<p>Our most popular service is our Virtual Receptionist. We know that ...</p>
+								<p class="box__content__less">Our most popular service is our Virtual Receptionist. We know that ...</p>
+								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+								<button class="link box__content__less">know more  <i class="icon icon--arrow"></i></button>
+         					<button class="link box__content__more"><i class="icon icon--close"></i></button>
+								</div>
 							</div>
 	
 						</div>
 						<div class="col-lg-5">
-							<div class="small-box">
+							<div class="box">
+								<img src="images/careers-00.png" alt="">
+								<div class="box-content">
 								<h3>PSD TO HTML KORI</h3>
-								<p>We know that sometimes it’s something and you middle most..</p>
+								<p class="box__content__less">We know that sometimes it’s something and you middle most..</p>
+								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something. You middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+								<button class="link box__content__less">know more  <i class="icon icon--arrow"></i></button>
+         					<button class="link box__content__more"><i class="icon icon--close"></i></button>
+								</div>
 							</div>
 						</div>
 					<div class="col-lg-5">
-						<div class="small-box">
+						<div class="box">
+							<img src="images/griego4_1x.png" alt="">
+							<div class="box-content">
 							<h3>COOL PSD DESIGN</h3>
-							<p>Our most popular service is our new virtual Receptionist you middle most..</p>
+							<p class="box__content__less">Our most popular service is our new virtual Receptionist you middle most..</p>
+							<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something. You middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+							<button class="link box__content__less">know more  <i class="icon icon--arrow"></i></button>
+         				<button class="link box__content__more"><i class="icon icon--close"></i></button>
+							</div>
 						</div>
 					</div>
 					<div class="col-lg-7">
-						<div class="large-box">
+						<div class="box">
+							<img src="images/blog-3.png" alt="">
+							<div class="box-content">
 							<h3>DESIGNING IS THE COOL LOVE FOR</h3>
-							<p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..</p>
+							<p class="box__content__less">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..</p>
+							<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
+							<button class="link box__content__less">know more  <i class="icon icon--arrow"></i></button>
+         				<button class="link box__content__more"><i class="icon icon--close"></i></button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section>
-			<hgroup>
+			<div class="container">
+				<hgroup>
 					<h2>SMALL TEAM</h2>
 					<h4>LOREM IPSUM DOLOR SIT AMET EVENT LANDING TEMPLATE</h4>
 				</hgroup>
+				<div class="row flex-set">
+					<div class="col-lg-4">
+						<div class="box">
+							<div class="box__content__more">
+								<img src="images/team_3 copy.png" alt="">
+								<h3>AL RAYHAN / <small><em>UI DESIGNER</em></small></h3>
+								<p>Lorem Ipsum is not simply is an action designer random text It has roots in a piece. </p>
+							</div>
+							<button class="link box__content__less"><img src="images/team_3 copy.png" alt=""></button>
+         				<button class="link box__content__more"><i class="icon icon--close"></i></button>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="box">
+							<img src="images/team_4.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="box">
+							<img src="images/team_1.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="box">
+							<img src="images/team_2.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="box">
+							<img src="images/3.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="box">
+							<img src="images/team_3 copy.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		<section class="testimonial"></section>
 		<footer></footer>
+		<script type="text/javascript" src="js/sop.js"></script>
 	</body>
 </html>

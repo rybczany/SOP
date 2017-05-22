@@ -95,6 +95,20 @@ hgroup {
 	background-color: #71f5ea; 
 	width:245px;
 }
+/*-----------------INPUT*/
+.box-contact input {
+	display: block;
+	width: 100%;
+	line-height: 45px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	background-color: transparent;
+	color: #848585;
+	border-style: none;
+	border-bottom: 1px inset #848585;
+	margin-bottom: 20px;
+	outline: none;
+}
 
 /*----------STYLE*/
 header {
@@ -290,7 +304,7 @@ header a {
 	background-repeat: no-repeat;
 	background-position: 50% 80%;
 }
-.almost-white .col-lg-7 h3 {
+.almost-white .text-box h3 {
 	font-family: 'Merriweather', serif;
 	padding-bottom: 20px;
 }
@@ -318,19 +332,6 @@ section:nth-child(7) {
 }
 ::-webkit-input-placeholder { /* Chrome */
   color: #848585;
-}
-.box-contact input {
-	display: block;
-	width: 100%;
-	line-height: 45px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
-	background-color: transparent;
-	color: #848585;
-	border-style: none;
-	border-bottom: 1px inset #848585;
-	margin-bottom: 20px;
-	outline: none;
 }
 .box-contact input:nth-child(4) {
 	margin-bottom: 35px;

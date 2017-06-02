@@ -26,6 +26,9 @@ img {
 li {
 	display: inline-block;
 }
+address {
+	font-style: normal;
+}
 
 /*-----------TYPOGRAPHY*/
 
@@ -235,59 +238,53 @@ header a {
 	height: 410px;
 	background-color: #eff0f2;
 }
-.slider-text {
+.slider--text {
 	width: 670px;
 }
-.slider-text::after {
+.slider--text::after {
 	display: none;
 }
-.slider-2nd::after {
+.slider--2nd-after::after {
 	width: 390px;
 	height: 365px;
 	top: 38px;
 	left: 15px;
 }
-.pagination {
+.slider__pagination {
 	text-align: center;
 	padding: 0;
-	margin-top: 25px;
+	margin-top: 30px;
 }
-.pagination li a {
+.slider__pagination li a {
 	display: block;
 	background-color: #d0d0d0;
 	width: 12px;
 	height: 12px;
 	border-radius: 3px;
 }
-.pagination li a:hover {
+.slider__pagination li a:hover {
 	background-color: #71f5ea;
 }
-.slider-text-pagination {
+.slider--text__pagination {
 	display: flex;
 	justify-content: flex-end;
-	margin-top: 30px;
 }
-.slider-text-pagination li {
+.slider--text__pagination li {
 	position: relative;
 	margin-left: 30px;
 }
-.slider-text-pagination li a {
-	display: block;
+.slider--text__pagination li a {
 	background-color: #fff;
 	width: 50px;
 	height: 50px;
-	border-radius: 5px;
 	z-index: -1;
 	box-shadow: 2px 2px 12px #eff0f2;
 	transition: .3s background-color ease-out;
 }
-.slider-text-pagination li a img {
+.slider--text__pagination li a img {
 	position: absolute;
 	top: 18px;
 	left: 18px;
-}
-.slider-text-pagination li a:hover {
-	background-color: #71f5ea;
 }
 .flex-set {
   justify-content: center;

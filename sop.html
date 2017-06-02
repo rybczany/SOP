@@ -8,11 +8,15 @@
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 			<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
  			<script type="text/javascript" src="js/sop.js"></script>
+ 			<script type="text/javascript" src="js/slider.js"></script>
+ 			<script type="text/javascript" src="slick/slick.min.js"></script>
     		<script
         	src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCJnj2nWoM86eU8Bq2G4lSNz3udIkZT4YY&sensor=false">
     		</script>
 			<link rel="stylesheet" href="css/normalize.css">
 			<link rel="stylesheet" href="css/flexboxgrid.css">
+			<link rel="stylesheet" href="slick/slick-theme.css">
+			<link rel="stylesheet" href="slick/slick.css">
         <link rel="stylesheet" href="css/sop.css">
         <link rel="author" href="humans.txt">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
@@ -50,14 +54,17 @@
 				<div class="row flex-set">
 					<div class="col-lg-6">
 						<div class="slider">
-							<img src="images/Image.png" title="working area" alt="working area">
-							<ul class="slider__pagination">
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-							</ul>
+							<img src="images/image1.png" title="working area" alt="working area">
+							<img src="images/team_3 copy.png" alt="Diana">
+							<img src="images/3.png" alt="Veronica">
+							<img src="images/team_2.png" title="working area" alt="working area">
 						</div>
+						<ul class="slider__pagination">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+						</ul>
 					</div>
 					<div class="col-lg-6">
 						<h3>WE ACTUALLY DO AMAZING WORKS</h3>
@@ -119,7 +126,7 @@
 						<div class="col-lg-7">
 							<div class="box">
 								<img src="images/11.png" alt="healing tea">
-								<div class="box-content">
+								<div class="box__content">
 								<h3>DESIGNING IS THE COOL LOVE FOR</h3>
 								<p class="box__content__less">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most.</p>
 								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
@@ -131,7 +138,7 @@
 						<div class="col-lg-5">
 							<div class="box">
 								<img src="images/img-9.png" alt="working area">
-								<div class="box-content">
+								<div class="box__content">
 								<h3>COOL PSD DESIGN</h3>
 								<p class="box__content__less">Our most popular service is our we know that sometimes it’s something and you middle most.</p>
 								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something. You middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
@@ -143,7 +150,7 @@
 						<div class="col-lg-7">
 							<div class="box">
 								<img src="images/griego3_1x.png" alt="laptop">
-								<div class="box-content">
+								<div class="box__content">
 								<h3>DESIGNING IS THE COOL</h3>
 								<p class="box__content__less">Our most popular service is our Virtual Receptionist. We know that ...</p>
 								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
@@ -156,7 +163,7 @@
 						<div class="col-lg-5">
 							<div class="box">
 								<img src="images/careers-00.png" alt="working area">
-								<div class="box-content">
+								<div class="box__content">
 								<h3>PSD TO HTML KORI</h3>
 								<p class="box__content__less">We know that sometimes it’s something and you middle most..</p>
 								<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something. You middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
@@ -168,7 +175,7 @@
 					<div class="col-lg-5">
 						<div class="box">
 							<img src="images/griego4_1x.png" alt="bottle">
-							<div class="box-content">
+							<div class="box__content">
 							<h3>COOL PSD DESIGN</h3>
 							<p class="box__content__less">Our most popular service is our new virtual Receptionist you middle most..</p>
 							<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something. You middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
@@ -180,7 +187,7 @@
 					<div class="col-lg-7">
 						<div class="box">
 							<img src="images/blog-3.png" alt="glasses">
-							<div class="box-content">
+							<div class="box__content">
 							<h3>DESIGNING IS THE COOL LOVE FOR</h3>
 							<p class="box__content__less">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most..</p>
 							<p class="box__content__more">Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.</p>
@@ -251,14 +258,17 @@
 				<div class="row flex-set">
 					<div class="col-lg-5">
 						<div class="slider slider--2nd-after">
-							<img src="images/team_1_shadow.png" title="John Doe" alt="John">
-							<ul class="slider__pagination">
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-								<li><a href="#"></a></li>
-							</ul>
+							<img src="images/team_1.png" title="John Doe" alt="John">
+							<img src="images/team_4.png" title="John Doe" alt="Mark">
+							<img src="images/team_2.png" title="John Doe" alt="Carl">
+							<img src="images/3.png" title="Eva Doe" alt="Eva">
 						</div>
+						<ul class="slider__pagination">
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+						</ul>
 					</div>
 					<div class="col-lg-7">
 						<div class="slider slider--text">
@@ -266,12 +276,29 @@
 								<h3>AL RAYHAN / <small><em>UI DESIGNER</em></small></h3>
 								<p>Lorem Ipsum is simply dummy text of the printing and you 
 								standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<img src="images/stars.png" alt="stars">
 							</div>
-							<ul class="slider__pagination slider--text__pagination">
+							<div class="text-box">
+								<h3>MARK NAHYAR / <small><em>UX DESIGNER</em></small></h3>
+								<p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+								<img src="images/4stars.png" alt="stars">
+							</div>
+							<div class="text-box">
+								<h3>CARL YARHAN / <small><em>UI DESIGNER</em></small></h3>
+								<p>Lorem Ipsum is simply dummy text of the printing and you 
+								standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+								<img src="images/3stars.png" alt="stars">
+							</div>
+							<div class="text-box">
+								<h3>EVA HYARANA / <small><em>WEB DESIGNER</em></small></h3>
+								<p>Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you.</p>
+								<img src="images/4stars.png" alt="stars">
+							</div>
+						</div>
+						<ul class="slider__pagination slider--text__pagination">
 								<li><a href="#" title="previous"><img src="images/Shape 3.png" alt=""></a></li>
 								<li><a href="#" title="next"><img src="images/Shape 31.png" alt=""></a></li>
-							</ul>
-						</div>
+						</ul>
 					</div>
 					<div class="logo">
 						<ul>
@@ -337,5 +364,7 @@
 			</div>
 		</footer>
 		<script type="text/javascript" src="js/sop.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 	</body>
 </html>

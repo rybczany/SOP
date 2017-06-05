@@ -236,7 +236,7 @@ header a {
 	left: -43px;
 	width: 480px;
 	height: 410px;
-	background-color: #eff0f2;
+	background-color: #dee0e2;
 }
 .slider--text {
 	width: 670px;
@@ -257,7 +257,7 @@ header a {
 }
 .slider__pagination li a {
 	display: block;
-	background-color: #d0d0d0;
+	background-color: #dee0e2;
 	width: 12px;
 	height: 12px;
 	border-radius: 3px;
@@ -270,7 +270,6 @@ header a {
 	justify-content: flex-end;
 }
 .slider--text__pagination li {
-	position: relative;
 	margin-left: 30px;
 }
 .slider--text__pagination li a {
@@ -282,9 +281,7 @@ header a {
 	transition: .3s background-color ease-out;
 }
 .slider--text__pagination li a img {
-	position: absolute;
-	top: 18px;
-	left: 18px;
+	padding: 18px;
 }
 .flex-set {
   justify-content: center;
@@ -418,7 +415,7 @@ header a {
   display: inline-block;
 }
 .text-box {
-	background-color: #eff0f2;
+	background-color: #dee0e2;
 	text-align: center;
 	padding: 60px 75px 67px;
 	margin-top: 49px;
@@ -493,11 +490,11 @@ footer ul {
 	margin: 5px 0 40px;
 }
 footer li {
-	position: relative;
 	margin: 5px;
 }
 footer li a {
 	display: block;
+	border-radius: 2px;
 	width: 45px;
 	height: 45px ;
 	background-color: #424648; 
@@ -507,12 +504,11 @@ footer li a:hover {
 }
 footer li img {
 	filter: brightness(0.7); 
-	position: absolute;
-	top: 10px;
-	right: 15px;
+	padding: 12px 13px;
 }
 footer li img:hover {
 	filter: brightness(0); 
 }
+
 
 

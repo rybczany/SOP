@@ -250,21 +250,33 @@ header a {
 	top: 50px;
 	left: -30px;
 }
-.slider__pagination {
-	text-align: center;
-	padding: 0;
-	margin-top: 30px;
+.slick-dots {
+    bottom: -40px;
 }
-.slider__pagination li a {
-	display: block;
-	background-color: #dee0e2;
-	width: 12px;
-	height: 12px;
-	border-radius: 3px;
+.slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
 }
-.slider__pagination li a:hover {
-	background-color: #71f5ea;
+.slick-dots li button {
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    background-color: #dee0e2;
+    border-radius: 3px;
 }
+.slick-dots li button:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    background-color: #71f5ea;
+}
+.slick-dots li.slick-active button:before {
+    background-color: #71f5ea;
+ }
 .slider--text__pagination {
 	display: flex;
 	justify-content: flex-end;
@@ -273,12 +285,17 @@ header a {
 	margin-left: 30px;
 }
 .slider--text__pagination li a {
+	display: block;
 	background-color: #fff;
 	width: 50px;
 	height: 50px;
 	z-index: -1;
+	border-radius: 3px;
 	box-shadow: 2px 2px 12px #eff0f2;
 	transition: .3s background-color ease-out;
+}
+.slider--text__pagination li a:hover {
+	background-color: #71f5ea;
 }
 .slider--text__pagination li a img {
 	padding: 18px;

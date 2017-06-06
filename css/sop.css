@@ -29,9 +29,21 @@ li {
 address {
 	font-style: normal;
 }
+/*--------------- ICONS */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/slick.eot');
+    src: url('F:/!piotr/zadanie 3/SOP/fonts/slick.eot?#iefix') format('embedded-opentype'), url('F:/!piotr/zadanie 3/SOP/fonts/slick.woff') format('woff'), url('F:/!piotr/zadanie 3/SOP/fonts/slick.ttf') format('truetype'), url('F:/!piotr/zadanie 3/SOP/fonts/slick.svg#slick') format('svg');
+}
 
 /*-----------TYPOGRAPHY*/
-
+h1, h2, h3, h4, a {
+	text-transform: uppercase;
+}
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 45px;
@@ -73,7 +85,6 @@ p {
 a {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 hgroup {
 	text-align: center;
@@ -276,6 +287,7 @@ header a {
 }
 .slick-dots li.slick-active button:before {
     background-color: #71f5ea;
+    border-radius: 3px;
  }
 .slider--text__pagination {
 	display: flex;
@@ -499,6 +511,7 @@ footer .flex-set {
 }
 footer p {
 	margin: 0;
+	text-transform: uppercase;
 }
 footer ul {
 	display: flex;

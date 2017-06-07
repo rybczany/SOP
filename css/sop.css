@@ -37,7 +37,7 @@ address {
     font-style: normal;
 
     src: url('fonts/slick.eot');
-    src: url('F:/!piotr/zadanie 3/SOP/fonts/slick.eot?#iefix') format('embedded-opentype'), url('F:/!piotr/zadanie 3/SOP/fonts/slick.woff') format('woff'), url('F:/!piotr/zadanie 3/SOP/fonts/slick.ttf') format('truetype'), url('F:/!piotr/zadanie 3/SOP/fonts/slick.svg#slick') format('svg');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
 }
 
 /*-----------TYPOGRAPHY*/
@@ -147,7 +147,7 @@ input[type="submit"]:hover {
 header {
 	text-align: center;
 	background-size: auto auto;
-	background-image: url("F:/!piotr/zadanie 3/SOP/images/JuiceGlass.png");
+	background-image: url("../images/JuiceGlass.png");
 	background-repeat: no-repeat;
 	background-position: 80% 88%;
 	background-color: #eff0f2;
@@ -321,22 +321,12 @@ header a {
 	padding: 18px;
 }
 .slick-prev, .slick-next {
-    font-size: 0;
-    line-height: 0;
-    position: absolute;
     top: 110%;
-    display: block;
     width: 50px;
     height: 50px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
+    background-color: #fff;
+    box-shadow: 3px 3px 8px #c0c3c9;
+    border-radius: 3px;
 }
 .slick-prev {
     left: 1040px;
@@ -349,19 +339,14 @@ header a {
     left: auto;
 }
 .slick-prev::before {
-    content: url(./images/Shape 3.png);
+    content: url(../images/Shape 3.png);
 }
 [dir='rtl'] .slick-prev:before {
-    content: url(F:/!piotr/zadanie 3/SOP/images/Shape 31.png);
+    content: url(../images/Shape 31.png);
 }
 .slick-prev:before, .slick-next:before {
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    opacity: .5;
+    color: #000;
 }
 .flex-set {
   justify-content: center;
@@ -582,7 +567,7 @@ header a {
 	padding: 15px 10px 0;
 }
 section:nth-child(7) {
-	background-image: url("F:/!piotr/zadanie 3/SOP/images/Bg copy 41.png");
+	background-image: url("../images/Bg copy 41.png");
 	background-size: cover;
 	background-color: transparent;
 }

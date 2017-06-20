@@ -5,6 +5,7 @@ body {
 	background-color: #ffffff;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
+	overflow-x: hidden;
 }
 .almost-white {
 	background-color: #f8fafa
@@ -358,8 +359,14 @@ header a {
 .hamburger__icon:focus::after {
 	border-top: 5px solid #b2f2ee;
 }
+.hamburger__icon:hover {
+	cursor: pointer;
+}
 .hamburger__site-menu {
 	display: none;
+}
+.adjust.active .hamburger__site-menu {
+	display: block;
 	margin-top: 20px;
 	background-color: #b2f2ee;
 	width: 240px;
@@ -371,26 +378,24 @@ header a {
 	box-shadow: 5px 8px 8px #c0c3c9;
 	transition: .5s transform ease-out;
 }
-.hamburger__site-menu ul {
+.adjust.active .hamburger__site-menu ul {
 	list-style-type: none;
 	padding-left: 40px;
 }
-.hamburger__site-menu li {
+.adjust.active .hamburger__site-menu li {
 	display: list-item;
 	margin: 10px 40px 10px 0;
 	border-bottom: 0.5px solid #bbb;
 }
-.hamburger__site-menu a {
+.adjust.active .hamburger__site-menu a {
 	border: none;
 	margin: 0;
 	font-weight: 400;
 }
-.hamburger__site-menu a:hover {
+.adjust.active .hamburger__site-menu a:hover {
 	font-weight: 700;
 }
-.adjust .hamburger__icon.active .hamburger__site-menu {
-	display: block;
-}
+
 
 /*----------
 .hamburger:focus ~ .site-menu {

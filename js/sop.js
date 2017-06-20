@@ -8,6 +8,16 @@ $(document).ready(function() {
     })
 });
 
+$('.adjust .hamburger__icon').on('click', function() {
+  $(this).parents('.adjust').toggleClass('active');
+});
+
+$(document).ready(function() {
+    $('.adjust').on('click', function() {
+        $(this).find('.hamburger__icon').toggleClass('active');
+    })
+});
+
 
 
 /*-------SLIDER*/

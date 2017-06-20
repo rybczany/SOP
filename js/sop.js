@@ -8,6 +8,16 @@ $(document).ready(function() {
     })
 });
 
+$('.hamburger__icon').on('click', function() {
+  $(this).parents('.hamburger__icon').toggleClass('active');
+});
+
+$(document).ready(function() {
+    $('.adjust').on('click', function() {
+        $(this).find('.hamburger__icon').toggleClass('active');
+    })
+});
+
 
 /*-------SLIDER*/
 
@@ -35,3 +45,5 @@ $('.slider-nav').slick({
   dots: true,
   focusOnSelect: true,
 });
+
+

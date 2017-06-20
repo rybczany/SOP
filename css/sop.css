@@ -5,7 +5,6 @@ body {
 	background-color: #ffffff;
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
-	overflow-x: hidden;
 }
 .almost-white {
 	background-color: #f8fafa
@@ -327,7 +326,7 @@ header a {
 	height: 40px;
 	margin: 70px 0 200px 15px;
 }
-.hamburger {
+.hamburger__icon {
 	width: 40px;
 	height: 25px;
 	margin-top: 80px;
@@ -339,11 +338,11 @@ header a {
 	transition: .3s transform linear, 1s border-top ease-out;
 	outline: none;
 }
-.hamburger:focus {
+.hamburger__icon:focus {
 	transform: rotate(90deg);
 	border-top: 5px solid #f3e659;
 }
-.hamburger:before, .hamburger:after {
+.hamburger__icon:before, .hamburger__icon:after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -352,14 +351,15 @@ header a {
 	width: 100%;
 	transform: translateY(5px);
 }
-.hamburger:after {
+.hamburger__icon:after {
 	transform: translateY(15px);
 	transition: 1s border-top ease-out;
 }
-.hamburger:focus::after {
+.hamburger__icon:focus::after {
 	border-top: 5px solid #b2f2ee;
 }
-.site-menu {
+.hamburger__site-menu {
+	display: none;
 	margin-top: 20px;
 	background-color: #b2f2ee;
 	width: 240px;
@@ -369,29 +369,34 @@ header a {
 	border: 1px solid #777879;
 	border-radius: 2px;
 	box-shadow: 5px 8px 8px #c0c3c9;
-	transform: translateX(105%);
 	transition: .5s transform ease-out;
 }
-.site-menu ul {
+.hamburger__site-menu ul {
 	list-style-type: none;
 	padding-left: 40px;
 }
-.site-menu li {
+.hamburger__site-menu li {
 	display: list-item;
 	margin: 10px 40px 10px 0;
 	border-bottom: 0.5px solid #bbb;
 }
-.site-menu a {
+.hamburger__site-menu a {
 	border: none;
 	margin: 0;
 	font-weight: 400;
 }
-.site-menu a:hover {
+.hamburger__site-menu a:hover {
 	font-weight: 700;
 }
+.adjust .hamburger__icon.active .hamburger__site-menu {
+	display: block;
+}
+
+/*----------
 .hamburger:focus ~ .site-menu {
 	transform: translateX(0);
 }
+------------------*/
 .box {
 	position: relative;
   	color: #fff;

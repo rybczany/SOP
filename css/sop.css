@@ -14,9 +14,11 @@ body {
 	max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 15px;
 }
 /*------------GLOBAL*/
+.row {
+	margin: 0;
+}
 .flex-set {
   justify-content: center;
   align-items: stretch;
@@ -71,6 +73,10 @@ h1 {
 	font-size: 45px;
 	letter-spacing: 2px;
 	line-height: 65px;
+	margin: 0;
+	padding-bottom: 150px;
+	text-align: center;
+	text-shadow: 5px 8px 8px #c0c3c9;
 }
 h2 {
 	font-family: 'Montserrat', sans-serif;
@@ -112,6 +118,12 @@ hgroup {
 	text-align: center;
 	padding: 120px 0 150px;
 }
+@media screen and (max-width: 800px) {
+	h1 {padding: 0 15px 150px;}
+}	
+@media screen and (max-width: 576px) {
+	h1 {font-size: 40px; line-height: 50px; padding-bottom: 50px}
+}	
 
 /*-----------------BUTTONS*/
 .btn {
@@ -299,22 +311,29 @@ header {
 	background-position: 80% 88%;
 	background-color: #eff0f2;
 }
-header h1 {
-	margin: 0;
-	padding-bottom: 150px;
-	text-align: center;
-	text-shadow: 5px 8px 8px #c0c3c9;
+@media screen and (max-width: 800px) {
+	header {background-position: 55% 70%}
 }
+@media screen and (max-width: 768px) {
+	header {background-position: 55% 80%}
+}
+@media screen and (max-width: 576px) {
+	header {background-image: none;}
+}	
 h1 span {
 	background-color: #b2f2ee;
 	padding: 0 8px;
 }
+@media screen and (max-width: 576px) {
+	h1 span {display: none;}
+}	
 a span {
 	font-size: 26px;
 	color: #b2f2ee;
 }
 header .row {
 	justify-content: space-between;
+	margin-right: 0;
 }
 header a {
 	font-family: 'Montserrat', sans-serif;
@@ -327,6 +346,12 @@ header a {
 	height: 40px;
 	margin: 70px 0 200px 15px;
 }
+@media screen and (max-width: 768px) {
+	header a {margin: 30px 0 70px 15px;}
+}	
+.hamburger {
+	margin-right: 15px;
+}
 .hamburger__icon {
 	width: 40px;
 	height: 25px;
@@ -338,6 +363,9 @@ header a {
 	cursor: pointer;
 	transition: .3s transform linear, 1s border-top ease-out;
 	outline: none;
+}
+@media screen and (max-width: 768px) {
+	.hamburger__icon {margin-top: 40px;}
 }
 .hamburger__icon:focus {
 	transform: rotate(90deg);
@@ -556,13 +584,19 @@ header a {
 	position: absolute;
 	bottom: 75px;
 	z-index: 5;
-	padding: 0 40px;
+	padding: 0 20px;
+}
+.box__content__more--text h3{
+	text-align: center;
+}
+.box__content__more--text p {
+	padding: 0 20px;
 }
 .box__content__more--text ul {
 	display: flex;
 	align-items: center;
-	padding: 0;
-	margin-bottom: -40px;
+	padding: 0 20px;
+	margin-bottom: -50px;
 }
 .box__content__more--text ul li {
 	max-width: 15px;

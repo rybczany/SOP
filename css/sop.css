@@ -24,6 +24,7 @@ body {
   align-items: stretch;
   padding-bottom: 165px;
 }
+/*-----------
 .flex-set .col-lg-4 {
     -ms-flex-preferred-size: 32.6108%;
     flex-basis: 32.6108%;
@@ -39,11 +40,12 @@ body {
     flex-basis: 42.3888%;
     max-width: 42.3888%;
 }
+---------------*/
 img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	margin: 0 auto
+	margin: 0 auto;
 }
 li {
 	display: inline-block;
@@ -311,9 +313,6 @@ header {
 	background-position: 80% 88%;
 	background-color: #eff0f2;
 }
-@media screen and (max-width: 800px) {
-	header {background-position: 55% 70%}
-}
 @media screen and (max-width: 768px) {
 	header {background-position: 55% 80%}
 }
@@ -430,6 +429,9 @@ header a {
 	transform: translateX(0);
 }
 ------------------*/
+#works .adjust {
+	padding: 0 7px;
+}
 .box {
 	position: relative;
   	color: #fff;

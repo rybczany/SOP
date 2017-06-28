@@ -5,18 +5,20 @@ $('.box .link').on('click', function() {
 $(document).ready(function() {
     $('.adjust').on('click', function() {
         $(this).find('.box').toggleClass('active');
-    })
+    });
 });
 
-$('.adjust .hamburger__icon').on('click', function() {
-  $(this).parents('.adjust').toggleClass('active');
-});
+$('.hamburger__icon').click(function(){
+    $('.hamburger__site-menu').toggleClass('active');
+  });
+$('.hamburger__icon').click(function(){
+    $(this).toggleClass('active');
+  });
+$('.hamburger__site-menu').click(function(){
+    $(this).toggleClass('active');
+  });
 
-$(document).ready(function() {
-    $('.adjust').on('click', function() {
-        $(this).find('.hamburger__icon').toggleClass('active');
-    })
-});
+
 
 
 

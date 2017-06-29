@@ -1,25 +1,17 @@
-$('.box .link').on('click', function() {
-  $(this).parents('.box').toggleClass('active');
-});
 
-$(document).ready(function() {
-    $('.adjust').on('click', function() {
-        $(this).find('.box').toggleClass('active');
+  $('.box .link').on('click', function() {
+      $(this).parents('.box').toggleClass('active');
     });
+
+$(document).ready(function(){
+  $('.adjust').on('click', function() {
+      $(this).find('.box').toggleClass('active');
+  });
 });
 
-$('.hamburger__icon').click(function(){
-    $('.hamburger__site-menu').toggleClass('active');
-  });
-$('.hamburger__icon').click(function(){
-    $(this).toggleClass('active');
-  });
-$('.hamburger__site-menu').click(function(){
-    $(this).toggleClass('active');
-  });
-
-
-
+  $('.hamburger__icon, .hamburger__site-menu').click(function(){
+      $('.hamburger__icon, .hamburger__site-menu').toggleClass('active');
+    });
 
 
 /*-------SLIDER*/
@@ -50,5 +42,7 @@ $(document).ready(function(){
     focusOnSelect: true,
   });
 });
+
+
 
 

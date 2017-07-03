@@ -79,7 +79,7 @@ h1 {
 	letter-spacing: 2px;
 	line-height: 65px;
 	margin: 0;
-	padding-bottom: 150px;
+	padding: 310px 0 150px;
 	text-align: center;
 	text-shadow: 5px 8px 8px #c0c3c9;
 }
@@ -124,7 +124,7 @@ hgroup {
 	padding: 120px 0 150px;
 }
 @media screen and (max-width: 800px) {
-	h1 {padding: 0 15px 150px;}
+	h1 {padding: 200px 15px 150px;}
 }	
 @media screen and (max-width: 576px) {
 	h1 {font-size: 40px; line-height: 50px; padding-bottom: 50px;}
@@ -144,6 +144,7 @@ hgroup {
 
 /*-----------------BUTTONS*/
 .btn {
+	margin: 0 0 200px 0;
 	border-radius: 2px;
 	border: 2px solid #777879;
 	cursor: auto;
@@ -158,6 +159,9 @@ hgroup {
 	display: inline-block;
 	transition: .15s transform linear;
 }
+@media screen and (max-width: 800px) {
+	.btn {margin: 0 0 100px 0;}
+}	
 .btn:hover {
 	transform: scale(1.05, 1.05);
 }
@@ -334,10 +338,6 @@ a span {
 	font-size: 26px;
 	color: #b2f2ee;
 }
-header .row {
-	justify-content: space-between;
-	margin-right: 0;
-}
 header a {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
@@ -347,12 +347,19 @@ header a {
 	border: 5px solid black;
 	width: 110px;
 	height: 40px;
-	margin: 70px 0 200px 15px;
+	margin: 70px 0 60px 15px;
 }
 @media screen and (max-width: 768px) {
 	header a {margin: 30px 0 70px 15px;}
-}	
+}
+.nav-bar {
+	position: fixed;
+	z-index: 100;
+	background-color: rgba(239,240,242,.7);
+}
 .hamburger {
+	display: inline-block;
+	text-align: right;
 	margin-right: 15px;
 }
 .hamburger__icon {
@@ -405,7 +412,6 @@ header a {
 	border: 1px solid #777879;
 	border-radius: 2px;
 	box-shadow: 5px 8px 8px #c0c3c9;
-	transition: .5s transform ease-out;
 }
 .hamburger__site-menu ul {
 	list-style-type: none;

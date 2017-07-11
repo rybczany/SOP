@@ -9,9 +9,17 @@ $(document).ready(function(){
   });
 });
 
-  $('.hamburger__icon, .hamburger__site-menu').click(function(){
-      $('.hamburger__icon, .hamburger__site-menu').toggleClass('active');
+  $('.hamburger__icon, .hamburger__site-menu, .sub-nav-bar').click(function(){
+      $('.hamburger__icon, .hamburger__site-menu, .sub-nav-bar').toggleClass('active');
     });
+
+  /*------
+  $(window).scrollDown(200)(function(){
+      $(this).addClass('nav-bar--low');
+    });
+  -------*/
+
+
 
 
 /*-------SLIDER*/

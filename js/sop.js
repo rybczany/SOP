@@ -19,6 +19,19 @@ $(document).ready(function(){
     });
   -------*/
 
+$(window).scroll(function(){
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > 100) {
+        $('.nav-bar').addClass('nav-bar--low');
+    } else {
+        $('.nav-bar').removeClass('nav-bar--low');
+    }
+    if (scrollTop > 100) {
+        $('.nav-bar__item').addClass('nav-bar__item--low');
+    } else {
+        $('.nav-bar__item').removeClass('nav-bar__item--low');
+    }
+  });
 
 
 

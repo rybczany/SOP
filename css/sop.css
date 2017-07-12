@@ -347,7 +347,7 @@ a span {
 	z-index: 99;
 }
 .nav-bar--low {
-	height: 100px;
+	height: 102px;
 }
 .sub-nav-bar {
 	display: none;
@@ -367,6 +367,9 @@ a span {
 	width: 100%;
 	justify-content: space-between;
 	z-index: 100;
+}
+.nav-bar__item--low {
+	margin-top: -47px;
 }
 .nav-bar__item--logo {
 	font-family: 'Montserrat', sans-serif;
@@ -431,6 +434,7 @@ a span {
 	display: block;
 	position: absolute;
 	right: 0;
+	background-color: #b2f2ee;
 	opacity: 1;
 	margin-top: 42px;
 	width: 100%;

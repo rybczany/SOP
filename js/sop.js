@@ -13,11 +13,6 @@ $(document).ready(function(){
       $('.hamburger__icon, .hamburger__site-menu, .sub-nav-bar').toggleClass('active');
     });
 
-  /*------
-  $(window).scrollDown(200)(function(){
-      $(this).addClass('nav-bar--low');
-    });
-  -------*/
 
 $(window).scroll(function(){
     var scrollTop = $(window).scrollTop();
@@ -33,6 +28,14 @@ $(window).scroll(function(){
     }
   });
 
+$('.hamburger__icon').click(function(){
+  $('.hamburger__site-menu.active')
+  .animate({
+    'opacity': 1,
+    'left': 0
+  },800)
+})
+;
 
 
 /*-------SLIDER*/

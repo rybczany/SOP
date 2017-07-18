@@ -349,18 +349,7 @@ a span {
 .nav-bar--low {
 	height: 102px;
 }
-.sub-nav-bar {
-	display: none;
-}
-.sub-nav-bar.active {
-	display: block;
-	position: fixed;
-	top: 150px;
-	width: 100%;
-	height: 65px;
-	background-color: rgba(178, 242, 238, 1);
-	z-index: 99;
-}
+
 .nav-bar__item {
 	position: fixed;
 	max-width: inherit;
@@ -434,7 +423,7 @@ a span {
 	display: block;
 	position: absolute;
 	right: 0;
-	background-color: #b2f2ee;
+	background-color: rgba(178, 242, 238, .95);
 	margin-top: 44px;
 	width: 100%;
 }

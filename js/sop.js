@@ -9,8 +9,8 @@ $(document).ready(function(){
   });
 });
 
-  $('.hamburger__icon, .hamburger__site-menu, .sub-nav-bar').click(function(){
-      $('.hamburger__icon, .hamburger__site-menu, .sub-nav-bar').toggleClass('active');
+  $('.hamburger__icon, .hamburger__site-menu').click(function(){
+      $('.hamburger__icon, .hamburger__site-menu').toggleClass('active');
     });
 
 
@@ -29,13 +29,13 @@ $(window).scroll(function(){
   });
 
 $('.hamburger__icon').click(function(){
-  $('.hamburger__site-menu.active')
-  .animate({
-    'opacity': 1,
-    'left': 0
-  },800)
-})
-;
+  $('.hamburger__site-menu.active').animate({
+    opacity: 1,
+    left: 0
+  },800);
+  return false
+
+});
 
 
 /*-------SLIDER*/

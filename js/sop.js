@@ -33,10 +33,13 @@ $('.hamburger__icon').click(function(){
     opacity: 1,
     left: 0
   },800);
-  return false
-
 });
 
+$('.hamburger__site-menu a, .nav-bar__item a, .btn').click(function(){
+   $('body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 1000);
+  });
 
 /*-------SLIDER*/
 
